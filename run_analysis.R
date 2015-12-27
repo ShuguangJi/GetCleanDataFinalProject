@@ -39,10 +39,10 @@ DataDesc$activity<- factor(DataDesc$activity,labels=as.character(ActivityLabel$V
 
 #4. Appropriately labels teh data set with descriptive varialbe names.
 names(DataDesc)<-gsub("^t", "Time", names(DataDesc))
-names(DataDesc)<-gsub("^f", "Frequency", names(DataDesc))
 names(DataDesc)<-gsub("Acc", "Accelerometer", names(DataDesc))
 names(DataDesc)<-gsub("Gyro", "Gyroscope", names(DataDesc))
 names(DataDesc)<-gsub("Mag", "Magnitude", names(DataDesc))
+names(DataDesc)<-gsub("^f", "Frequency", names(DataDesc))
 names(DataDesc)<-gsub("BodyBody", "Body", names(DataDesc))
 
 #5. From the data set in step 4, creates a second, independently tidy data
