@@ -1,4 +1,5 @@
-
+#Please set your working directory properly. 
+#0.Download the data set online.
 fileUrl <- "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
 download.file(fileUrl, destfile = "data.zip")##No method="curl" used.
 unzip("data.zip");
